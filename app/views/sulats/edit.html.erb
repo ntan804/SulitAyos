@@ -1,0 +1,18 @@
+<h2>REPLY MESSAGE</h2>
+
+
+
+<%= form_for(@reply) do |m| %>
+  <div>
+    Recipient: <%= @recipient.email %>
+  </div>
+
+  <div><%= m.label :subject %>
+    <%=m.text_field  :subject  %></div>
+
+  <div><%= m.label :msgbody %><br />
+    <%=m.text_field  :msgbody %></div>
+
+  <div><%= m.submit "Send Message", class: "btn btn-inverse" %></div>
+<% end %>
+

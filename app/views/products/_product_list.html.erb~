@@ -1,0 +1,21 @@
+<div class = "prodlist">
+
+  <table class = "table">
+    <tr>
+      <th>Name</th>
+      <th>Price</th>
+      <th>Date Submitted</th>
+      <th>Status</th>
+    </tr>
+  <% @products.each do |products| %>
+  <tr>
+    <td><%= products.name %></td>
+    <td><%= products.price %></td>
+    <td><%= products.created_at %></td>
+    <td><%= products.status %></td>
+  </tr>
+<% end %>
+  </table>
+  <%= will_paginate @products %>
+</div>
+

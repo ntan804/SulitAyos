@@ -1,0 +1,27 @@
+<div class = "adjust">
+<h2>Sign up</h2>
+
+<%= form_for(resource, :as => resource_name, :url => registration_path(resource_name) ) do |f| %>
+    <small><h6><%= devise_error_messages! %></h6></small>
+  <div class = "boxes">
+    <%= f.label :name %>
+    <%= f.text_field :firstname, :autofocus => true, :placeholder => "First Name" %>
+    <%= f.text_field :lastname, :autofocus => true, :placeholder => "Last Name" %>
+    <%= f.label :birthday %> 
+    <%= f.text_field :birthday, :autofocus => true %>
+    <%= f.label :address %>
+    <%= f.text_field :address, :autofocus => true %>
+    <%= f.label :contact %>
+    <%= f.text_field :contact, :autofocus => true %>
+    <%= f.label :email %>
+    <%= f.text_field :email, :autofocus => true %>
+    <%= f.label :password %>
+    <%= f.password_field :password %>
+    <%= f.label :password_confirmation %>
+    <%= f.password_field :password_confirmation %>
+  </div>
+
+  <div class = "reg_but"><%= f.submit "Sign up", class: "btn btn-info" %></div>
+<% end %>
+<div class = "reg_links"><%= render "devise/shared/links" %></div>
+</div>

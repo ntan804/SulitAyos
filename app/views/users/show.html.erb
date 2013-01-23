@@ -1,0 +1,18 @@
+<%= render 'upper'%>
+      <ul class = "dropdown-menu">
+        <li><%= render 'follow_form' if signed_in? %></li>
+      </ul>
+    </div>
+    <% if current_user.following?(@user)%>
+      <br /><%= rating_for @user, "Credibility", :star => 10%>
+    <% end %>
+  </div>
+</div>
+<div class = "borderlist">
+  <div class = "user_prod_list">
+    <h3>MY SHOP</h3>
+    <%= render 'products/product_list' %>
+  </div>
+</div>
+</div>
+

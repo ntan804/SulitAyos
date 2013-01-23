@@ -1,0 +1,19 @@
+<%= render 'upper'%>
+      <ul class = "dropdown-menu">
+        <li><%= link_to "Edit Profile", edit_user_registration_path(current_user) %></li>
+        <li><%= link_to "Add Product", new_product_path%></li>
+        <li><%= link_to "New Message", new_sulat_path %></li>
+      </ul>
+    </div>
+    <br /><%= rating_for @user, "Credibility", :star=> 10%>
+  </div>
+</div>
+  <div class = "borderlist">
+  <div class = "user_prod_list">
+    <h3>Feeds</h3>
+    <%= render 'feeds' %>
+  </div>
+</div>
+</div>
+
+

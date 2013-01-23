@@ -1,0 +1,19 @@
+<div class = "prodlist">
+    <% @feed_items.each do |products| %>
+      <div class = "layerproduct">
+        <div class = "prodimg">
+          <%= gravatar_for @user%>
+        </div>
+        Product Name: <%= products.name%> <br />
+        Product Price: <%= products.price%> <br />
+        Date Posted: <%= products.created_at%><br />
+        Status: <%= products.status%><br />
+        Owner: <%= products.user.firstname %> &nbsp; <% products.user.lastname %> <br />
+        <% if not current_user?(products.user)%>
+          <%= link_to "Inquire", new_sulat_path(product_id: products.user.id)%>
+        <% end %>
+      </div>
+    <% end %>
+    <%= will_paginate @feed_items %>
+</div>
+

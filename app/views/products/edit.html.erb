@@ -1,0 +1,21 @@
+<div class = "adjust">
+<h3>Edit Product</h3>
+
+<%= form_for(@product) do |f| %>
+  
+
+  <div><%= f.label :name %><br />
+  <%= f.text_field :name %></div>
+
+  <div><%= f.label :price %><br />
+   <%= f.text_field :price %></div>
+
+  <div><%= f.label :description %><br />
+  <%= f.text_field :description %></div>
+
+  <div><%= f.label :status %><br />
+  <%= f.text_field :status %></div>
+
+  <div><%= f.submit "Save", class: "btn btn-info" %></div>
+<% end %>
+</div>

@@ -1,0 +1,31 @@
+<div class = "myprofile">
+  <h3>MY PROFILE </h3>
+</div>
+
+<div class = "myshop">
+  <h3> MY SHOP </h3>
+</div>
+
+<div class = "profilebody">
+  <div class = "user_img">
+    <%= gravatar_for @user %>
+  </div>
+
+<div class = "user_profile">
+  <%= @user.firstname %><%= @user.lastname%><br />
+  <%= @user.email %><br />
+  <%= @user.address %><br />
+  <%= @user.birthday %><br />
+    <div class = "btn-group">
+      <a class = "btn btn-info"><i class = "icon-user icon-white"> Actions</a></i>
+      <a class = "btn btn-info dropdown-toggle" data-toggle = "dropdown"><span class = "caret"></span></a>
+        <ul class = "dropdown-menu">
+          <li><%= render 'follow_form' if signed_in? %></li>
+        </ul>
+    </div>
+</div>
+
+<div class = "user_prod_list">
+  <%= render 'products/product_list' %>
+</div>
+

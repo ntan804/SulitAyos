@@ -1,0 +1,16 @@
+    <table class = "table table-striped">
+      <tr>
+        <th>Name</th>
+        <th>Price</th>
+        <th>Date Submitted</th>
+        <th>Date Expired</th>
+        <th>Status</th>
+        <th>Action</th>
+      </tr>
+    <% @products.each do |products| %>
+      <tr>
+      <td><%= products.name %></td>
+      <td><%= products.price %></td>
+      <td><%= products.description %></td>
+      <td><%= products.description %></td>
+      <td><%= products.status %></td>

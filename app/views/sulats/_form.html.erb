@@ -1,0 +1,23 @@
+<div class = "adjust">
+  <h2><%= yield(:title) %></h2>
+
+  <%= form_for(yield(:mail)) do |m| %>
+  <div class = "boxes">
+    <% unless params[:user_id] %>
+      <%= m.select :receiver_id, User.values_for_select %>
+    <% else %>
+      Recipient: <%= @recipient.email %>
+      <%= m.hidden_field :receiver_id, value: @recipient.id %>
+    <% end %>
+
+    <%= m.label :subject %>
+    <%=m.text_field :subject %>
+
+    <%= m.label :msgbody %>
+    <%=m.text_field  :msgbody %>
+  </div>
+
+  <div class = "reg_but"><%= m.submit "Send Message", class: "btn btn-inverse" %></div>
+<% end %>
+
+</div>

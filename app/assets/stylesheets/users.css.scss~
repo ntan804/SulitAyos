@@ -1,0 +1,69 @@
+// Place all the styles related to the users controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+.user_prod_list{
+  padding: 20px;
+  margin-top : 0px;
+  margin-right : 50px;
+  margin-left : 0px;
+  width: 950px;
+}
+
+.user_profile{
+  margin-left : 150px;
+  margin-top : 0px;
+  width: 200px;
+}
+
+.user_img{
+  margin-left : 10px;
+  margin-top : 0px;
+  width: 100px;
+  height: 100px;
+  position: absolute;
+}
+
+.borderprofile{
+  margin-top: 80px;
+  padding: 40px;
+  width: 1090px;
+  background: rgb(252,255,244); /* Old browsers */
+  background: -moz-linear-gradient(top,  rgba(252,255,244,1) 0%, rgba(233,233,206,1) 100%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(252,255,244,1)), color-stop(100%,rgba(233,233,206,1))); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top,  rgba(252,255,244,1) 0%,rgba(233,233,206,1) 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top,  rgba(252,255,244,1) 0%,rgba(233,233,206,1) 100%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(top,  rgba(252,255,244,1) 0%,rgba(233,233,206,1) 100%); /* IE10+ */
+  background: linear-gradient(to bottom,  rgba(252,255,244,1) 0%,rgba(233,233,206,1) 100%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fcfff4', endColorstr='#e9e9ce',GradientType=0 ); /* IE6-9 */
+
+
+}
+
+.borderlist{
+  margin-top: 30px;
+  padding: 40px;
+  width: 1090px;
+  border-radius: 20px;
+
+  background: rgb(252,255,244); /* Old browsers */
+  background: -moz-linear-gradient(top,  rgba(252,255,244,1) 0%, rgba(233,233,206,1) 100%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(252,255,244,1)), color-stop(100%,rgba(233,233,206,1))); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top,  rgba(252,255,244,1) 0%,rgba(233,233,206,1) 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top,  rgba(252,255,244,1) 0%,rgba(233,233,206,1) 100%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(top,  rgba(252,255,244,1) 0%,rgba(233,233,206,1) 100%); /* IE10+ */
+  background: linear-gradient(to bottom,  rgba(252,255,244,1) 0%,rgba(233,233,206,1) 100%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fcfff4', endColorstr='#e9e9ce',GradientType=0 ); /* IE6-9 */
+}
+.myprofile{
+  margin-top: 0px
+}
+
+.myshop{
+  margin-top: 0px;
+  margin-left: 100px;
+}
+
+.profilebody{
+  margin-top: 40px;
+}

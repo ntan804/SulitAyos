@@ -1,0 +1,17 @@
+<div class = "prodlist">
+   <% @products.each do |products| %>
+      <div class = "layerproduct">
+        <div class = "prodimg">
+          <%= gravatar_for @user%>
+        </div>
+        Product Name: <%= products.name%> <br />
+        Product Price: <%= products.price%> <br />
+        Date Posted: <%= products.created_at%><br />
+        Status: <%= products.status%><br />
+        Owner: <%= products.user.firstname %> &nbsp; <% products.user.lastname %> <br />
+        <%= link_to "Inquire", "#"%>
+      </div>
+    <% end %>
+  <%= will_paginate @products %>
+</div>
+

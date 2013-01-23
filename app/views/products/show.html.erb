@@ -1,0 +1,25 @@
+<div class = "adjust">
+<div class = "prodlist">
+  <div class = "showprodprofile">
+    <div class = "showprodimg">
+      <%= gravatar_for @product.user %>
+    </div>
+    
+     Product Name: <%= @product.name%> <br />
+     Product Price: <%= @product.price%> <br />
+     Date Posted: <%= @product.created_at%><br />
+     Status: <%= @product.status%><br />
+     Description: <%= @product.description%><br />
+     Owner: <%= @product.user.firstname %> &nbsp; <% @product.user.lastname %> <br />
+          
+     <% if current_user?(@product.user) %>
+      <%= link_to "Edit", edit_product_path , :method => "get", class: "btn btn-info"%>
+      <%= link_to "Delete", @product , :method => "delete",
+                                            data: { confirm: "You sure?" }, class: "btn btn-info"%>
+     <% else %>
+       <%= link_to "See Owner Profile", user_path(@product.user.id)%><br />
+      <%= link_to "Inquire", new_mail_path(product_id: @product.user.id) %>
+     <% end %>
+  </div>
+</div>
+</div>
