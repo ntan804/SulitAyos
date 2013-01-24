@@ -1,4 +1,5 @@
-<h2>SHOW MAIL</h2>
+<div class = "adjust">
+<h4>Show Mail</h4>
 From:<%= @sender.email %><br />
 To: <%= @recipient.email %><br />
 Subject: <%= @sulat.subject %><br />
@@ -6,7 +7,5 @@ Subject: <%= @sulat.subject %><br />
 Message:<br />
 <%= @sulat.msgbody %>
 <br /><br />
-<%= link_to "Reply", edit_sulat_path, :method => "get", class: "btn btn-inverse"%>
-<%= link_to "Delete", @sulat, :method => "delete",
-                      data: { confirm: "You sure?" }, class: "btn btn-inverse" %>
-
+<%= link_to "Reply", edit_sulat_path, :method => "get", class: "btn btn-info"%>
+</div>

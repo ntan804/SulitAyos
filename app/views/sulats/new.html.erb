@@ -4,10 +4,10 @@
 <%= form_for(@sulat) do |m| %>
     <div>
       <% unless params[:user_id] %>
-        <%= m.select :receiver_id, User.values_for_select %>
+        <%= m.select :recipient_id, User.values_for_select %>
       <% else %>
         Recipient: <%= @recipient.email %>
-        <%= m.hidden_field :receiver_id, value: @recipient.id %>
+        <%= m.hidden_field :recipient_id, value: @recipient.id %>
       <% end %>
     </div>
 

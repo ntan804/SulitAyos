@@ -62,11 +62,11 @@ ActiveRecord::Schema.define(:version => 20130122034350229) do
   create_table "sulats", :force => true do |t|
     t.string   "subject"
     t.text     "msgbody"
-    t.boolean  "read"
+    t.boolean  "read",         :default => false
     t.integer  "sender_id"
-    t.integer  "receiver_id"
-    t.datetime "created_at",  :null => false
-    t.datetime "updated_at",  :null => false
+    t.integer  "recipient_id"
+    t.datetime "created_at",                      :null => false
+    t.datetime "updated_at",                      :null => false
   end
 
   create_table "users", :force => true do |t|

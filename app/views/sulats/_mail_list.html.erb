@@ -3,14 +3,14 @@
   <h3><%= yield(:title) %></h3>
   <table class = "table table-striped">
     <tr>
-      <th>User</th>
       <th>Subject</th>
+      <th>User</th>
       <th>Date</th>
       <th>Action</th>
     </tr>
   <% @sulats.each do |sulat| %>
     <tr>
-      <td><%= sulat.receiver.firstname %> <%= sulat.receiver.lastname %></td>
+      <td><%= sulat.sender.firstname %> <%= sulat.sender.lastname %></td>
       <td><%= sulat.subject %></td>
       <td><%= sulat.created_at %></td>
       <td><%= link_to "Show", sulat_path(sulat.id) %>
@@ -21,4 +21,4 @@
     </table>
     <%= will_paginate @sulats %>
 </div>
-
+</div>

@@ -1,15 +1,33 @@
 <footer class = "bodyfooter">
-  <div class = "twitterpic">
-  <%= image_tag "twitter.png", width: 200, height: 250%>
-  </div>
+  <div class = "navbar navbar-inverse">
+    <div class = "navbar-inner">
 
-  <div class = "fbpic">
-  <%= image_tag "fb.png", width: 200, height: 250%>
-  </div>
-  <div class = "cright">
-  <small><center>
-      &copy; Christian Michael Dollosa || Nicole Tan
-  </center></small>
-</div>
+      <div class = "footercontainer">
+        <ul class = "nav", width: 100 >
+          <li><%= image_tag "twitter.png", width: 50, height: 5 %></li>
+        </ul>
 
+        <div class = "nav-collapse collapse">
+          <ul class = "nav">
+            <li><%= link_to "Follow us on Twitter" , "#"%></li>
+          </ul> 
+        </div>
+
+        <ul class = "nav", width: 100 >
+          <li><%= image_tag "fb.png", width: 50, height: 5 %></li>
+        </ul>
+
+        <div class = "nav-collapse collapse">
+          <ul class = "nav">
+            <li><%= link_to "Add us on Facebook", "#"%></li>
+          </ul> 
+        </div>
+      </div>
+      <div class = "cright">
+        <small><center>
+          &copy; Christian Michael Dollosa || Nicole Tan
+        </center></small>
+      </div>
+    </div>
+  </div>
 </footer>

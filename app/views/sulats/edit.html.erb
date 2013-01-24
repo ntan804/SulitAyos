@@ -1,4 +1,5 @@
-<h2>REPLY MESSAGE</h2>
+<div class = "adjust">
+<h3>Reply Message</h3>
 
 
 
@@ -6,13 +7,13 @@
   <div>
     Recipient: <%= @recipient.email %>
   </div>
-
+  <br />
   <div><%= m.label :subject %>
     <%=m.text_field  :subject  %></div>
 
-  <div><%= m.label :msgbody %><br />
-    <%=m.text_field  :msgbody %></div>
+  <div><%= m.label :Message %><br />
+    <%=m.text_area  :msgbody %></div>
 
-  <div><%= m.submit "Send Message", class: "btn btn-inverse" %></div>
+  <div><%= m.submit "Send Message", class: "btn btn-info" %></div>
 <% end %>
-
+</div>
