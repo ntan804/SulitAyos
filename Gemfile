@@ -5,10 +5,11 @@ gem 'rails', '3.2.11'
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
-group :development do
-  gem 'sqlite3', '1.3.5'
-end
+#group :development do
+#  gem 'sqlite3', '1.3.5'
+#end
 
+gem 'pg'
 gem 'devise'
 gem 'will_paginate', '3.0.3'
 gem 'bootstrap-will_paginate', '0.0.6'
@@ -27,9 +28,9 @@ group :assets do
   gem 'uglifier', '>= 1.0.3'
 end
 
-group :production do
-  gem 'pg', '0.12.2'
-end
+#group :production do
+#  gem 'pg', '0.12.2'
+#end
 gem 'jquery-rails'
 
 # To use ActiveModel has_secure_password
