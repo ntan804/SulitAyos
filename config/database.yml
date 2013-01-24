@@ -10,7 +10,7 @@ development:
   database: appname_development
   pool: 5
   timeout: 5000
-  username: michael
+  username: nicole 
   password:
 # Warning: The database defined as "test" will be erased and
 # re-generated from your development database when you run "rake".
@@ -22,12 +22,15 @@ test:
   database: appname_test
   pool: 5
   timeout: 5000
-  username: michael
+  username: nicole
   password:
 
 production:
   adapter: postgresql
+  encoding: unicode
   #database: db/production.sqlite3
   database: appname_production
   pool: 5
   timeout: 5000
+  username: nicole
+  password:
